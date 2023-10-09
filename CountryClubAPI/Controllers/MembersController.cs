@@ -49,7 +49,7 @@ namespace CountryClubAPI.Controllers
 
         [HttpPost]
         [Route("api/members/edit/{id:int}")]
-        public IActionResult UpdateMember(Member member)
+        public IActionResult UpdateMember(Member member, int id)
         {
             
             _context.Members.Update(member);
